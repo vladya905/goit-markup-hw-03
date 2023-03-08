@@ -1,0 +1,141 @@
+:root {
+  --text: #434455; /* slate */
+  --primary-white: #ffffff; /* white */
+  --pressed-state: #404bbf; /* ocean */
+  --dark: #2e2f42; /* navy blue */
+  --accent: #e7e9fc; /* cornflower */
+  --light: #f4f4fd; /* cloud */
+  --primary-brand: #4d5ae5; /* iris */
+}
+body {
+  background-color: var(--primary-white);
+  color: var(--text);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.list .link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+/* Buttons */
+.button {
+  color: var(--primary-brand);
+  background-color: var(--accent);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.button.primary {
+  color: var(--primary-white);
+  background-color: var(--primary-brand);
+}
+.button.secondary {
+  color: var(--primary-brand);
+  background-color: var(--accent);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white);
+  background-color: var(--pressed-state);
+}
+/* Header */
+.logo {
+  color: var(--primary-brand);
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.span-header {
+  color: var(--dark);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--pressed-state);
+}
+/* site nav */
+.site-nav .link {
+  color: var(--dark);
+  font-weight: 500;
+  text-decoration: none;
+}
+.site-nav .link.current {
+  color: var(--pressed-state);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--pressed-state);
+}
+.address-nav .link {
+  color: var(--dark);
+  text-decoration: none;
+  font-style: normal;
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--pressed-state);
+}
+/* Main content */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-title {
+  color: var(--dark);
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+/* Hero  */
+.hero-section {
+  background-color: var(--dark);
+}
+.hero-title {
+  color: var(--primary-white);
+  font-size: 56px;
+  line-height: 1.07;
+}
+/* Feauters and Team */
+.section-subtitle {
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section.team {
+  background-color: var(--light);
+}
+.section.team .link {
+  background-color: var(--primary-white);
+}
+/* Footer */
+.footer {
+  background-color: var(--dark);
+}
+.footer-text {
+  color: var(--accent);
+}
+.span-footer {
+  color: var(--light);
+}
+.portfolio-project-text {
+  color: var(--text);
+}
