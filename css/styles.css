@@ -7,6 +7,33 @@
   --light: #f4f4fd; /* cloud */
   --primary-brand: #4d5ae5; /* iris */
 }
+/**--------------------------RESET-------------------------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+a {
+  color: var(--dark);
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+/**--------------------------BASE-------------------------- */
 body {
   background-color: var(--primary-white);
   color: var(--text);
@@ -14,6 +41,7 @@ body {
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
+  width: 1440px;
 }
 .list .link {
   text-decoration: none;
@@ -21,7 +49,18 @@ body {
 .list {
   list-style: none;
 }
-/* Buttons */
+.section {
+  padding-left: 142px;
+  padding-right: 142px;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+/*! Buttons */
 .button {
   color: var(--primary-brand);
   background-color: var(--accent);
@@ -31,21 +70,37 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-decoration: none;
+  text-align: center;
 }
 .button.primary {
   color: var(--primary-white);
   background-color: var(--primary-brand);
+  border-radius: 4px;
+  border: 0px;
+  padding: 16px 32px;
+  margin-bottom: 188px;
 }
 .button.secondary {
   color: var(--primary-brand);
   background-color: var(--accent);
+  border-radius: 4px;
+  border: 0px;
+  padding: 12px 24px;
 }
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--primary-white);
   background-color: var(--pressed-state);
 }
-/* Header */
+/**--------------------------HEADER-------------------------- */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--accent);
+  margin: 0;
+  padding-left: 142px;
+  padding-right: 142px;
+}
 .logo {
   color: var(--primary-brand);
   font-family: 'Raleway';
@@ -55,6 +110,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .span-header {
   color: var(--dark);
@@ -64,6 +120,18 @@ body {
   color: var(--pressed-state);
 }
 /* site nav */
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-container {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  gap: 40px;
+}
 .site-nav .link {
   color: var(--dark);
   font-weight: 500;
@@ -76,6 +144,10 @@ body {
 .site-nav .link:focus {
   color: var(--pressed-state);
 }
+.address-nav {
+  display: flex;
+  gap: 40px;
+}
 .address-nav .link {
   color: var(--dark);
   text-decoration: none;
@@ -85,7 +157,7 @@ body {
 .address-nav .link:focus {
   color: var(--pressed-state);
 }
-/* Main content */
+/**-----------------------MAIN CONTENT----------------------- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -103,39 +175,112 @@ body {
   font-size: 36px;
   line-height: 1.1;
   text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
 }
-/* Hero  */
+/**--------------------------HERO-------------------------- */
 .hero-section {
   background-color: var(--dark);
+  margin-bottom: 120px;
+}
+.hero-container {
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-white);
   font-size: 56px;
   line-height: 1.07;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
 }
-/* Feauters and Team */
+/**--------------------------FEATURES-------------------------- */
+.section-feauters {
+  margin-bottom: 120px;
+}
 .section-subtitle {
   color: var(--dark);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
-.section.team {
+.section-feauters .list {
+  display: flex;
+  text-align: left;
+  min-width: 264px;
+  gap: 24px;
+}
+/**--------------------------WHAT ARE WE DOING-------------------------- */
+.section-work {
+  margin-bottom: 120px;
+}
+.section-work.list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+/**--------------------------OUR TEAM-------------------------- */
+.section-team {
   background-color: var(--light);
+  padding-bottom: 120px;
 }
-.section.team .link {
+.secton-team.list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.team-items-wrap {
+  padding-top: 32px;
   background-color: var(--primary-white);
+  border: 1px solid var(--accent);
 }
-/* Footer */
+/**--------------------------FOOTER-------------------------- */
 .footer {
   background-color: var(--dark);
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+.footer-logo {
+  margin-top: 100px;
+}
 .footer-text {
   color: var(--accent);
+  margin-top: 16px;
+  margin-bottom: 100px;
+  width: 264px;
 }
 .span-footer {
   color: var(--light);
 }
 .portfolio-project-text {
   color: var(--text);
+}
+/**--------------------------PORTFOLIO-------------------------- */
+.portfolio-buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  justify-content: space-between;
+}
+.portfolio-cards-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid var(--accent);
+  padding-left: 16px;
 }
